@@ -1,5 +1,4 @@
 from click import prompt
-from openai import api_key
 import streamlit as st
 import groq
 from langchain_groq import ChatGroq
