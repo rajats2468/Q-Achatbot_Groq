@@ -11,7 +11,7 @@ from transformers import LlamaModel
 load_dotenv()
 
 ##langsmith tracking
-os.environ['LANGCHAIN_API_KEY'] = os.getenv('LANGCHAIN_API_KEY')
+os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "")
 os.environ['LANGCHAIN_TRACING_V2'] = "true"
 os.environ['LANGCHAIN_PROJECT'] = 'Q&Q Chatbot with Groq'
 
